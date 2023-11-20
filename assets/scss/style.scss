@@ -1,0 +1,576 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Project Name
+ * @author      - 
+ * @created_by  - Asraful Hoque
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('assets/fonts/Gilroy-Medium.woff') format('woff'),
+        url('assets/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('assets/fonts/Gilroy-Bold.woff') format('woff'),
+        url('assets/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/Gilroy-SemiBold.woff') format('woff'),
+        url('assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* fonts import -END */
+
+/* reset, root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    width: .375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--lime-green)
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-main)
+}
+
+:root {
+    // Background & Text color
+    --primary-main: #20AD96;
+    --secondary-main: #263238;
+    --dark: #5D6568;
+    --deep-dark: #25292C;
+    --light-blue: #6776FF;
+    --lime-green: #F5FEFC;
+    --paste-color: #E4F5F2;
+}
+
+.gilroy {
+    font-family: 'Gilroy';
+}
+
+/* reset, root - END */
+
+// container resize
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1134px;
+    }
+}
+
+// container resize - end
+
+/* helper , base classes */
+
+// Background Color
+.primary-bg {
+    background-color: var(--primary-main);
+}
+
+.secondary-main {
+    background-color: var(--secondary-main);
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.deep-dark {
+    background-color: var(--deep-dark);
+}
+
+.lime-green {
+    background-color: var(--lime-green);
+}
+
+.paste-color {
+    background-color: var(--paste-color);
+}
+
+// Text color
+.primary-bg {
+    color: var(--primary-main);
+}
+
+.secondary-main {
+    color: var(--secondary-main);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.deep-dark {
+    color: var(--deep-dark);
+}
+
+.deep-dark {
+    color: var(--light-blue);
+}
+
+h1 {
+    color: var(--secondary-main);
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 60px;
+}
+
+h2 {
+    color: var(--secondary-main);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+
+    span {
+        color: var(--primary-main);
+    }
+}
+
+h3 {
+    color: var(--primary-main);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+h4 {
+    color: var(--deep-dark);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h5 {
+    color: var(--secondary-main);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+h6 {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.fs-36 {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.fs-54 {
+    font-size: 54px;
+    line-height: 3.37rem;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.box-shadow {
+    box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1);
+}
+
+.box-shadow2 {
+    box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05);
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.radius-16 {
+    border-radius: 16px;
+}
+
+/* helper , base classes  - END*/
+
+.navber-wrapper {
+    padding: 30px 0;
+}
+
+.navbar-nav li a {
+    margin-right: 24px;
+}
+
+.nav-item:hover {
+    color: var(--primary-main);
+}
+
+.nav-link {
+    &.active {
+        color: #20AD96 !important;
+    }
+}
+
+.offcanvas-backdrop.show {
+    display: none;
+}
+
+// button style
+.main-btn {
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--primary-main);
+    color: var(--primary-main);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: .2s all linear;
+}
+
+.main-btn:hover {
+    background-color: var(--primary-main);
+    border-color: var(--primary-main);
+    color: white;
+}
+
+.btn-wrapper {
+    gap: 20px;
+}
+
+.fill-btn {
+    background-color: var(--primary-main);
+    border-color: var(--primary-main);
+    color: white;
+    text-decoration: none;
+}
+
+.fill-btn:hover {
+    background-color: var(--bg-white);
+    border-color: 2px solid var(--primary-main);
+    color: var(--primary-main);
+}
+
+// Hero section
+.hero {
+    padding: 32px 0 70px 0;
+
+}
+
+.banner-text {
+    padding-top: 33px;
+}
+
+.right-side {
+    position: relative;
+}
+
+.img2 {
+    position: absolute;
+    top: calc(25% - 50px);
+    left: 65px;
+}
+
+.img3 {
+    position: absolute;
+    top: 65%;
+    right: calc(65% - 30px);
+}
+
+.img4 {
+    position: absolute;
+    top: calc(50% - 44px);
+    right: -8%;
+}
+
+// Course Section
+.course-details {
+    padding: 100px 0;
+}
+
+.courses-box {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(32, 173, 150, 0.50);
+    background-color: #fff;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.04);
+}
+
+.instruction {
+    svg {
+        margin-bottom: 20px;
+    }
+}
+
+.margin-bottom30 {
+    margin-bottom: 30px;
+}
+
+.margin-top90 {
+    margin-top: 90px;
+}
+
+// Students career section
+.left-side {
+    position: relative;
+}
+
+.career-img img {
+    margin-left: -50px;
+}
+
+.img4 {
+    position: absolute;
+    top: calc(50% - 44px);
+    right: -8%;
+}
+
+.students-career {
+    padding: 49px 0;
+
+    .gx-5 {
+        --bs-gutter-x: 7rem !important;
+    }
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #E0E0E0;
+    margin: 46px 0 32px 0;
+}
+
+// Instructors section
+
+.instructors-wrapper {
+    margin: 100px 0;
+}
+
+.instructors-card {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid #E1E9ED;
+    margin: 28px 0;
+}
+
+.instructors-card h4 {
+    margin: 25px 0 15px 0;
+}
+
+.instructors-card h6 {
+    color: #6776FF;
+}
+
+// Registration section
+
+.registration-wrapper {
+    margin: 100px 0;
+    padding: 50px 0;
+}
+
+.Students-Grow {
+    position: relative;
+}
+.registration-img {
+    position: absolute;
+    top: calc(40% - 50px);
+    right: -50px;
+}
+
+.register-icon {
+    padding: 22px 0;
+}
+
+.register-content h6,
+.register-content p {
+    margin: 0;
+}
+
+// Subscribe section
+
+.subscribe {
+    margin: 100px 0;
+    padding: 122.5px 0;
+    background-image: url(../img/subscribe.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.free-class h6 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.form-control {
+    width: 530.645px;
+    height: 64px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+    color: #000;
+}
+
+.search {
+    max-width: 530px;
+    width: 100%;
+    margin: auto;
+}
+
+.search button {
+    background: #333;
+    color: #fff;
+    border-radius: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 165.419px;
+    height: 54px;
+    right: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px
+}
+
+// Footer section
+
+.footer-wrapper {
+    padding-bottom: 0;
+}
+
+.footer-wrapper h6 {
+    color: var(--dark);
+}
+
+.footer-wrapper .contact-info ul a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer-wrapper ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.link-widget li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-wrapper span {
+    color: var(--secondary-main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.links h5 {
+
+    margin: 18px 0 22px 0;
+}
+
+.links ul li a {
+    font-family: gilroy;
+    color: var(--dark);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 22px;
+}
+
+// Copyright section
+.copyright {
+    padding: 26px 0 9px 0;
+}
+
+a {
+    svg * {
+        transition: all 0.3s linear;
+    }
+
+    &:hover {
+        svg * {
+            fill: #20AD96;
+        }
+    }
+
+    &:hover {
+        .instra * {
+            stroke: #20AD96;
+            fill: transparent;
+        }
+    }
+}
+
+
+.icon a {
+    text-decoration: none;
+    padding-right: 24px;
+}
+
+.over{
+    
+}
