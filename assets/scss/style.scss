@@ -249,6 +249,10 @@ p {
     margin-right: 24px;
 }
 
+.navbar ul li a:hover {
+    color: var(--primary-main);
+}
+
 .nav-item:hover {
     color: var(--primary-main);
 }
@@ -310,28 +314,6 @@ p {
     padding-top: 33px;
 }
 
-.right-side {
-    position: relative;
-}
-
-.img2 {
-    position: absolute;
-    top: calc(25% - 50px);
-    left: 65px;
-}
-
-.img3 {
-    position: absolute;
-    top: 65%;
-    right: calc(65% - 30px);
-}
-
-.img4 {
-    position: absolute;
-    top: calc(50% - 44px);
-    right: -8%;
-}
-
 // Course Section
 .course-details {
     padding: 100px 0;
@@ -340,8 +322,12 @@ p {
 .courses-box {
     padding: 30px;
     border-radius: 10px;
-    border: 1px solid rgba(32, 173, 150, 0.50);
+    border: 1px solid transparent;
     background-color: #fff;
+}
+.courses-box:hover {
+    border-radius: 10px;
+    border: 1px solid rgba(32, 173, 150, 0.50);
     box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.04);
 }
 
@@ -416,15 +402,6 @@ p {
 .registration-wrapper {
     margin: 100px 0;
     padding: 50px 0;
-}
-
-.Students-Grow {
-    position: relative;
-}
-.registration-img {
-    position: absolute;
-    top: calc(40% - 50px);
-    right: -50px;
 }
 
 .register-icon {
@@ -571,6 +548,221 @@ a {
     padding-right: 24px;
 }
 
-.over{
-    
+@media (max-width:1200px) {
+    .navbar ul li a {
+        margin: 8px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .navber-wrapper {
+        padding: 12px 0;
+    }
+
+    .right-side img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .hero {
+        height: 90vh;
+    }
+
+    .course-details {
+        padding: 35px 0;
+    }
+
+    .instructors-wrapper {
+        margin: 50px 0;
+    }
+
+    .instructors-card {
+        margin: 18px 0;
+    }
+
+    .instructors-card h4 {
+        font-size: 22px;
+        margin: 10px 0 10px 0;
+    }
+
+    .instructors-card h6 {
+        font-size: 13px;
+    }
+
+    .registration-wrapper {
+        margin: 50px 0;
+        padding: 30px 0;
+    }
+
+    .register-icon {
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navber-wrapper {
+        padding: 12px 0;
+    }
+
+    .right-side img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero {
+        height: 90vh;
+    }
+
+    .course-details {
+        padding: 35px 0;
+    }
+
+    .course-details {
+        padding: 25px 0;
+    }
+
+    .margin-bottom30 {
+        margin-bottom: 10px;
+    }
+
+    .courses-box {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid rgba(32, 173, 150, 0.5);
+        background-color: #fff;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.04);
+    }
+
+    .career-img {
+        .img-fluid {
+            max-width: 80%;
+            height: auto;
+        }
+    }
+
+    .students-career {
+        padding: 27px 0;
+    }
+
+    .divider {
+        height: 1px;
+        width: 100%;
+        background-color: #E0E0E0;
+        margin: 36px 0 22px 0;
+    }
+
+    .instructors-wrapper {
+        margin: 20px 0;
+    }
+
+    .registration-wrapper {
+        margin: 50px 0;
+        padding: 30px 0;
+    }
+
+    .register-icon {
+        padding: 12px 0;
+    }
+
+    .search button {
+        background: #333;
+        color: #fff;
+        border-radius: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 165.419px;
+        height: 54px;
+        right: -8px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navber-wrapper {
+        padding: 12px 0;
+    }
+
+    .right-side img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero {
+        height: 90vh;
+    }
+
+    .course-details {
+        padding: 25px 0;
+    }
+
+    .margin-bottom30 {
+        margin-bottom: 10px;
+    }
+
+    .courses-box {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid rgba(32, 173, 150, 0.5);
+        background-color: #fff;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.04);
+    }
+
+    .career-img {
+        .img-fluid {
+            max-width: 80%;
+            height: auto;
+        }
+    }
+
+    .students-career {
+        padding: 27px 0;
+    }
+
+    .divider {
+        height: 1px;
+        width: 100%;
+        background-color: #E0E0E0;
+        margin: 36px 0 22px 0;
+    }
+
+    .instructors-wrapper {
+        margin: 30px 0;
+    }
+
+    .instructors-wrapper h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .instructors-wrapper h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .instructors-card {
+        margin: 20px;
+    }
+
+    .instructors-card h4 {
+        font-size: 20px;
+        margin: 15px 0 15px 0;
+    }
+
+    .instructors-card h6 {
+        font-size: 13px;
+    }
+
+    .registration-wrapper {
+        margin: 50px 0;
+        padding: 20px 0;
+    }
+
+    .register-icon {
+        padding: 12px 0;
+    }
+
 }
