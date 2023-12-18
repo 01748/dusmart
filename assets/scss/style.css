@@ -290,14 +290,13 @@ p {
 .courses-box {
   padding: 30px;
   border-radius: 10px;
-  border: 1px solid transparent;
+  border: 1px solid #E1E9ED;
   background-color: #fff;
-}
-
-.courses-box:hover {
-  border-radius: 10px;
-  border: 1px solid rgba(32, 173, 150, 0.5);
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.04);
+}
+.courses-box:hover {
+  border: 1px solid var(--primary-main);
+  transition: all 0.3s linear;
 }
 
 .instruction svg {
@@ -352,6 +351,10 @@ p {
   border-radius: 10px;
   border: 1px solid #E1E9ED;
   margin: 28px 0;
+}
+.instructors-card:hover {
+  border: 1px solid var(--primary-main);
+  transition: all 0.3s linear;
 }
 
 .instructors-card h4 {
@@ -511,7 +514,7 @@ a:hover .instra * {
     height: auto;
   }
   .hero {
-    height: 90vh;
+    min-height: 90vh;
   }
   .course-details {
     padding: 35px 0;
@@ -544,9 +547,6 @@ a:hover .instra * {
   .right-side img {
     max-width: 100%;
     height: auto;
-  }
-  .hero {
-    height: 90vh;
   }
   .course-details {
     padding: 35px 0;
@@ -610,9 +610,6 @@ a:hover .instra * {
     max-width: 100%;
     height: auto;
   }
-  .hero {
-    height: 90vh;
-  }
   .course-details {
     padding: 25px 0;
   }
@@ -667,4 +664,34 @@ a:hover .instra * {
   .register-icon {
     padding: 12px 0;
   }
+  .copyright {
+    padding: 40px 0;
+  }
+  .copyright p {
+    display: block;
+  }
+  .copyright .icon {
+    display: block;
+  }
+}
+.bg {
+  background-color: #1e1f26;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level {
+  background-color: #00d1b2;
+  padding: 5rem 0;
+  color: #ffffff;
+  margin: 0 !important;
+}
+
+.title {
+  color: inherit;
+  width: 200px;
+  height: 36px;
 }/*# sourceMappingURL=style.css.map */
